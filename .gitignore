@@ -1,4 +1,7 @@
-﻿.vs/
-[Bb]in/
-[Oo]bj/
-[Pp]ackages/
+﻿# Eclipse
+.classpath
+.project
+.settings/
+
+# Maven
+target/
