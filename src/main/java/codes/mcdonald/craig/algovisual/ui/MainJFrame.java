@@ -10,7 +10,9 @@ public class MainJFrame extends JFrame {
 	
 	private static final long serialVersionUID = 1L;
 
-	public MainJFrame() {
+	public MainJFrame(final String appName) {
+		
+		super(appName);
 		
 		try {
 			UIManager.setLookAndFeel(new FlatLightLaf());
@@ -18,10 +20,9 @@ public class MainJFrame extends JFrame {
 			// Don't care, just try and set the theme
 		}
 
-		JFrame frame = new JFrame("Algorithm Visualizations");
-		frame.setLocationRelativeTo(null);
-		frame.setSize(1024, 768);
-		frame.setVisible(true);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		setSize(1024, 768);
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 }
